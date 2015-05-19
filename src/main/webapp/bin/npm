@@ -1,0 +1,4 @@
+#!/bin/sh
+#Run from webapp dir, for example: ./bin/npm install gulp-concat --save-dev
+"node/node" "node/npm/bin/npm-cli.js" "$@"
+

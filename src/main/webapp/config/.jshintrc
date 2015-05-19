@@ -1,0 +1,16 @@
+{
+    "forin": true,
+    "latedef": true,
+    "newcap": true,
+    "noarg": true,
+    "nonew": true,
+    "undef": true,
+    "unused": "vars",
+    "maxdepth": 4,
+    "browser": true,
+    "loopfunc": true,
+    "jquery": true,
+    "globalstrict": false,
+    "predef": ["CONFIG","angular", "$q"],
+    "globals": ["CONFIG"]
+}

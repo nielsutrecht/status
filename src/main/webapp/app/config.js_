@@ -1,0 +1,4 @@
+this.CONFIG = { //Explicit global
+    IP_URL: <%= ipUrl %>,
+    WEATHER_URL: <%= weatherUrl %>
+};

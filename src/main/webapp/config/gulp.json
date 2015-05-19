@@ -1,0 +1,10 @@
+{
+    "local": {
+        "ipUrl": "'https://api.ipify.org?format=json'",
+        "weatherUrl": "'http://api.openweathermap.org/data/2.5/weather?q='"
+    },
+    "prod": {
+        "ipUrl": "'https://api.ipify.org?format=json'",
+        "weatherUrl": "'http://api.openweathermap.org/data/2.5/weather?q='"
+    }
+}

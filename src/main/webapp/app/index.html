@@ -1,0 +1,44 @@
+<!doctype html>
+<html ng-app="myApp">
+<head>
+    <meta charset="utf-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+    <title>Example Frontend Workflow</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width">
+    <link rel="stylesheet" href="assets/libs/bootstrap/dist/css/bootstrap.css">
+    <link rel="stylesheet" href="assets/css/main.css">
+
+    <script src="assets/libs/angular/angular.js"></script>
+    <script src="assets/libs/angular-route/angular-route.js"></script>
+    <script src="assets/libs/angular-bootstrap/dist/ui-bootstrap-tpls.js"></script>
+    <script src="assets/js/config.js"></script>
+    <script src="assets/js/main.js"></script>
+</head>
+<body>
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#/home">Example project</a>
+        </div>
+        <div id="navbar" class="collapse navbar-collapse">
+          <ul class="nav navbar-nav">
+            <li><a class="active" href="#/home">Welcome</a></li>
+            <li><a href="#ip">Public IP</a></li>
+            <li><a href="#weather">Weather</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <div class="container">
+          <div class="main-view" ng-view>
+          </div>
+    </div>
+</body>
+</html>

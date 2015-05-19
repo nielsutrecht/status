@@ -1,0 +1,3 @@
+#!/bin/sh
+#Run from webapp dir, for example: ./bin/karma
+"node/node" "node_modules/karma/bin/karma" "$@"
