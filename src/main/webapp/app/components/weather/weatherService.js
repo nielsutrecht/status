@@ -44,6 +44,28 @@ angular.module('myApp').service('weatherService', function($http) {
 
                 return weather;
             });
+        },
+        
+        forecast: function(city) {
+        	return $http.get('http://api.openweathermap.org/data/2.5/forecast/daily?q=Utrecht,NL&mode=json&units=metric&cnt=7').then(function(response){
+        		var weather = {
+        				city: response.data.city.name,
+        				days: response.data.list.map(function(val) {
+        					return {
+        						date: new Date(val.dt * 1000),
+        						temp: val.temp.day,
+        						description: val.weather[0].description,
+                                wind: {
+                                    speed: val.speed,
+                                    degrees: val.deg,
+                                    beaufort: toBeaufort(val.speed),
+                                    direction: toDirection(val.deg)
+                                }
+        					};
+        				})
+        		};
+        		return weather;
+        	});
         }
     };
 });

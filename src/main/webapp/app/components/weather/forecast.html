@@ -1,0 +1,2 @@
+<h2>Forecast for {{forecast.city}}</h2>
+<div ng-repeat="day in forecast.days">{{day.date | date : 'EEE'}} - {{day.temp | number : 1}}&deg;C - {{day.description}} - {{day.wind.beaufort}} - {{day.wind.direction}}</div>
